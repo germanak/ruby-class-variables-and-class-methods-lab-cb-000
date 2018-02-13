@@ -10,8 +10,8 @@ class Song
     @artist = artist
     @genre = genre
     @@count += 1
-    @@artists << artist
-    @@genres << genre
+    @@artists << @artist
+    @@genres << @genre
   end
 
   def self.count
@@ -27,6 +27,8 @@ class Song
   end
 
   def self.genre_count
-    
+    genre_hash = {}
+
+    genre_hash.include?(@genre)
   end
 end
