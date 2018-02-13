@@ -34,5 +34,7 @@ class Song
         genre_hash[genre] = @@genre.count(genre)
       end
     end
+
+    genre_hash
   end
 end
